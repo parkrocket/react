@@ -4,19 +4,21 @@ import axios from 'axios';
 import moment from 'moment';
 import { Link } from 'react-router-dom';
 
+//import store from '../redux/Store.js';
+
 
 function App() {
 
     const blogName = "Plug Ground";
-    const [subject, subjectChange] = useState([{ wr_subject: "", datetime: "", content: "" }]);
-    const [viewTarget, viewTargetChange] = useState({});
-
+    const [subject, subjectSet] = useState([{ wr_subject: "", datetime: "", content: "" }]);
+    const [number, numberSet] = useState(1);
+    const [viewTarget, viewTargetSet] = useState({});
 
     useEffect(() => {
         axios.get('http://175.125.95.182:4000/users')
             .then((response) => {
-                subjectChange(response.data);
-                viewTargetChange(response.data[0]);
+                subjectSet(response.data);
+                viewTargetSet(response.data[0]);
             })
             .catch((Error) => {
                 console.log(Error);
@@ -55,7 +57,7 @@ function App() {
             });
             sortChange("DESC");
         }
-        subjectChange(newArray);
+        subjectSet(newArray);
     }
 
 
@@ -68,7 +70,7 @@ function App() {
             <div className="list" key={index} >
                 <h3 onClick={() => {
                     window.scrollTo(0, 0);
-                    viewTargetChange(subject[index]);
+                    viewTargetSet(subject[index]);
                 }}> {list.wr_subject}
                     <span onClick={(event) => {
                         event.stopPropagation();
@@ -89,6 +91,10 @@ function App() {
                 <div><Link to="/">{blogName}</Link></div>
             </div>
             <button onClick={dataChange}>Sort</button>
+
+            <button onClick={() => {
+                console.log(number);
+            }}>+</button>
             <Modal subj={viewTarget.wr_subject} date={viewTarget.wr_datetime} content={viewTarget.wr_content} />
             {listItem}
         </div >
