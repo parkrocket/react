@@ -10,8 +10,8 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route exact path='/' element={<Main />} ></Route>
-          <Route exact path='/sub' element={<App2 />} ></Route>
+          <Route path='/' element={<Main />} ></Route>
+          <Route path='/sub' element={<App2 />} ></Route>
         </Routes>
       </BrowserRouter>
     </div>

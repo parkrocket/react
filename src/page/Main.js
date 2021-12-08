@@ -8,6 +8,9 @@ import './Css/media.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
+import Head from './Component/Head.js';
+
 function Main() {
     const settings = {
         dots: true,
@@ -29,7 +32,7 @@ function Main() {
         className: "center",
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: "10px",
         slidesToShow: 1,
         speed: 500
     };
@@ -47,24 +50,7 @@ function Main() {
                 </div>
             </div>
             <div id="main_wrap" className="wrap">
-                <div className="header_wrap">
-                    <div className="nav_top sec_padding">
-                        <h1 className="logo"><a href="index.html"><img src="../../images/test_logo.png" alt="" /></a></h1>
-                        <div className="nav_top_right">
-                            <p className="search"></p>
-                            <p className="heart"></p>
-                            <p className="alarm"></p>
-                        </div>
-                    </div>
-                    <div className="nav">
-                        <ul className="menu sec_padding">
-                            <li><a href="#!" className="on">홈</a></li>
-                            <li><a href="#!">사진</a></li>
-                            <li><a href="#!">홈트페스티벌</a></li>
-                            <li><a href="#!">이벤트</a></li>
-                        </ul>
-                    </div>
-                </div>
+                <Head></Head>
 
                 <div className="sec main_bn_wrap">
                     <div className="main_bn">
