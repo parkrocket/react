@@ -10,22 +10,29 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 import Head from './Component/Head.js';
+import Tail from "./Component/Tail.js";
 
 function Main() {
     const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 4000,
+        cssEase: "linear"
     };
 
     const settings2 = {
         dots: true,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 4000,
+        cssEase: "linear"
     };
 
     const settings3 = {
@@ -300,25 +307,25 @@ function Main() {
                                     <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
-                                    <img src="img /main_bn01.jpg" alt="" />
+                                    <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
                                     <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
-                                    <img src="img /main_bn01.jpg" alt="" />
+                                    <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
                                     <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
-                                    <img src="img /main_bn01.jpg" alt="" />
+                                    <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
                                     <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
-                                    <img src="img /main_bn01.jpg" alt="" />
+                                    <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
                                     <img src="../../images/main_bn01.jpg" alt="" />
@@ -456,47 +463,7 @@ function Main() {
                     </div>
                 </div>
 
-                <div className="footer_wrap">
-                    <div className="footer">
-                        <p>링크비</p>
-                        <div className="address">
-                            <div>
-                                대표이사 조인호 <span>&mid;</span>
-                                서울 금천구 가산디지털1로 128 (가산동, STXV타워) 607호입니다
-                            </div>
-                            <div>
-                                cs@linkbe.kr <span>&mid;</span>
-                                1661-9050
-                            </div>
-                        </div>
-                        <a href="#!">이용약관</a>
-                    </div>
-                </div>
-
-                <div className="follow_menu_wrap">
-                    <div className="follow_menu">
-                        <a href="#!">
-                            <img src="../../images/follow_icon01.png" alt="" />
-                            <p>하루배송</p>
-                        </a>
-                        <a href="#!">
-                            <img src="../../images/follow_icon01.png" alt="" />
-                            <p>카테고리</p>
-                        </a>
-                        <a href="#!" className="home_btn">
-                            <img src="../../images/follow_home_icon.png" alt="" />
-                            <p>홈</p>
-                        </a>
-                        <a href="#!">
-                            <img src="../../images/follow_icon01.png" alt="" />
-                            <p>찜</p>
-                        </a>
-                        <a href="#!">
-                            <img src="../../images/follow_icon01.png" alt="" />
-                            <p>마이</p>
-                        </a>
-                    </div>
-                </div>
+                <Tail></Tail>
             </div>
         </div>
     );
