@@ -83,12 +83,7 @@ function Main() {
                                 <div className="main_bn_img">
                                     <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
+
                             </Slider>
                         </div>
                         <div className="main_bn_paging"></div>
