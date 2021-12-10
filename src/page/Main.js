@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import './Css/style.css';
 import './Css/main.css';
 import './Css/media.css';
-
+import axios from 'axios';
+import moment from 'moment';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -36,7 +37,6 @@ function Main() {
         slidesToShow: 1,
         speed: 500
     };
-
 
 
     return (
