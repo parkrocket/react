@@ -467,7 +467,7 @@ function Main() {
                         <div className="address">
                             <div>
                                 대표이사 조인호 <span>&mid;</span>
-                                서울 금천구 가산디지털1로 128 (가산동, STXV타워) 607호
+                                서울 금천구 가산디지털1로 128 (가산동, STXV타워) 607호입니다
                             </div>
                             <div>
                                 cs@linkbe.kr <span>&mid;</span>
