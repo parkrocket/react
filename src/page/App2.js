@@ -11,7 +11,7 @@ function App() {
 
     const blogName = "Plug Ground";
     const [subject, subjectSet] = useState([{ wr_subject: "", datetime: "", content: "" }]);
-    const [number, numberSet] = useState(1);
+    const [number, /* numberSet */] = useState(1);
     const [viewTarget, viewTargetSet] = useState({});
 
     useEffect(() => {

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Main from './page/Main.js';
+import Main from './page/Component/Main/Main.js';
 import App2 from './page/App2.js';
-import { BrowserRouter, Route, Switch, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 
 function App() {

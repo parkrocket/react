@@ -1,29 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React from 'react'
 import Slider from "react-slick";
-import './Css/style.css';
-import './Css/main.css';
-import './Css/media.css';
-import axios from 'axios';
-import moment from 'moment';
+import '../../Css/style.css';
+import '../../Css/main.css';
+import '../../Css/media.css';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-
-import Head from './Component/Head.js';
-import Tail from "./Component/Tail.js";
+import Head from '../Head.js';
+import Tail from "../Tail.js";
+import MainEvent from "./MainEvent.js";
+import MainBanner from "./MainBanner.js";
 
 function Main() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        autoplaySpeed: 4000,
-        cssEase: "linear"
-    };
 
     const settings2 = {
         dots: true,
@@ -35,16 +23,6 @@ function Main() {
         autoplaySpeed: 4000,
         cssEase: "linear"
     };
-
-    const settings3 = {
-        className: "center",
-        centerMode: true,
-        infinite: true,
-        centerPadding: "10px",
-        slidesToShow: 1,
-        speed: 500
-    };
-
 
     return (
         <div>
@@ -59,43 +37,7 @@ function Main() {
             <div id="main_wrap" className="wrap">
                 <Head></Head>
 
-                <div className="sec main_bn_wrap">
-                    <div className="main_bn">
-                        <div className="main_bn_list">
-                            <Slider {...settings}>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-                                <div className="main_bn_img">
-                                    <img src="../../images/main_bn01.jpg" alt="" />
-                                </div>
-
-                            </Slider>
-                        </div>
-                        <div className="main_bn_paging"></div>
-                    </div>
-                </div>
+                <MainBanner></MainBanner>
 
                 <div className="sec best_talk_wrap">
                     <div className="sec_tit">
@@ -437,31 +379,7 @@ function Main() {
                     </div>
                 </div>
 
-                <div className="sec event_wrap">
-                    <div className="sec_tit">
-                        <h2>기회전 &amp; 이벤트</h2>
-                        <a href="#!">&gt;</a>
-                    </div>
-                    <div className="event_list">
-                        <Slider {...settings3}>
-                            <div className="event_box">
-                                <img src="../../images/event_img.jpg" alt="" />
-                                <span className="date">21.09.21-21.09.03</span>
-                                <p className="event_tit">2021 제1회 키친디자인페어</p>
-                            </div>
-                            <div className="event_box">
-                                <img src="../../images/event_img.jpg" alt="" />
-                                <span className="date">21.09.21-21.09.03</span>
-                                <p className="event_tit">2021 제1회 키친디자인페어</p>
-                            </div>
-                            <div className="event_box">
-                                <img src="../../images/event_img.jpg" alt="" />
-                                <span className="date">21.09.21-21.09.03</span>
-                                <p className="event_tit">2021 제1회 키친디자인페어</p>
-                            </div>
-                        </Slider>
-                    </div>
-                </div>
+                <MainEvent></MainEvent>
 
                 <Tail></Tail>
             </div>
