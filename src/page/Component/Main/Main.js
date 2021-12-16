@@ -3,13 +3,14 @@ import Slider from "react-slick";
 import '../../Css/style.css';
 import '../../Css/main.css';
 import '../../Css/media.css';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 
 import Head from '../Head.js';
 import Tail from "../Tail.js";
-import MainEvent from "./MainEvent.js";
 import MainBanner from "./MainBanner.js";
+import MainBestTalk from "./MainBestTalk.js";
+import MainComu from "./MainComu.js";
+import MainEvent from "./MainEvent.js";
+
 
 function Main() {
 
@@ -36,210 +37,9 @@ function Main() {
             </div>
             <div id="main_wrap" className="wrap">
                 <Head></Head>
-
                 <MainBanner></MainBanner>
-
-                <div className="sec best_talk_wrap">
-                    <div className="sec_tit">
-                        <h2>오늘의 베스트 톡</h2>
-                        <a href="#!">&gt;</a>
-                    </div>
-                    <div className="best_talk">
-                        <div className="best_item">
-                            <a href="#!">
-                                <div className="img"><img src="../../images/best_talk_img01.jpg" alt="" /></div>
-                                <div className="text">
-                                    오늘의 건강 아침 + 간식! 첫 도전해봤어요!
-                                </div>
-                            </a>
-                        </div>
-                        <div className="best_item">
-                            <a href="#!">
-                                <div className="img"><img src="../../images/best_talk_img02.jpg" alt="" /></div>
-                                <div className="text">
-                                    오늘의 건강 아침 + 간식! 첫 도전해봤어요!
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="sec notice_wrap">
-                    <ul className="notice_tab">
-                        <li className="on"><a href="#!">인기글</a></li>
-                        <li><a href="#!">최신글</a></li>
-                    </ul>
-                    <div className="notice_conts">
-                        <div className="hot">
-                            <ul>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            사례로 보는 구독 서비스
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            YOU만 모르는 스마트스토어 리마케팅 방법
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            스마트스토어 운영 시 추천 사이트 (기초 셋팅부터 운123456789
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            병읜원 분들!!!
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            꼰머우뇌가 전하는 활용법
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            사례로 보는 구독 서비스
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            스마트스토어 운영 시 추천 사이트 (기초 셋팅부터 운123456789
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            병읜원 분들!!!
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            꼰머우뇌가 전하는 활용법
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            사례로 보는 구독 서비스
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div className="new">
-                            <ul>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            new
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            YOU만 모르는 스마트스토어 리마케팅 방법
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            스마트스토어 운영 시 추천 사이트 (기초 셋팅부터 운123456789
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            병읜원 분들!!!
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            꼰머우뇌가 전하는 활용법
-                                        </p>
-                                        <p className="cmt_num">10</p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            사례로 보는 구독 서비스
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            스마트스토어 운영 시 추천 사이트 (기초 셋팅부터 운123456789
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            병읜원 분들!!!
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            꼰머우뇌가 전하는 활용법
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#!">
-                                        <p className="tit">
-                                            사례로 보는 구독 서비스
-                                        </p>
-                                        <p></p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <MainBestTalk></MainBestTalk>
+                <MainComu></MainComu>
 
                 <div className="sec main_middle_bn_wrap">
                     <div className="main_middle_bn">
@@ -273,7 +73,7 @@ function Main() {
                                     <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
-                                    <img src="img /main_bn01.jpg" alt="" />
+                                    <img src="../../images/main_bn01.jpg" alt="" />
                                 </div>
                                 <div>
                                     <img src="../../images/main_bn01.jpg" alt="" />

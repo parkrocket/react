@@ -1,19 +1,21 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import Slider from "react-slick";
 
 function MainBanner() {
-
+    const [activeSlide, setactiveSlide] = useState({activeSlide:1});
+    
     const settings = {
         dots: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        speed: 2000,
+        speed: 1000,
         autoplaySpeed: 4000,
-        cssEase: "linear"
+        cssEase: "linear",
+        afterChange: current => setactiveSlide({activeSlide:++current})
     };
-               
+
     return (
         <div className="sec main_bn_wrap">
             <div className="main_bn">
@@ -49,7 +51,11 @@ function MainBanner() {
 
                     </Slider>
                 </div>
-                <div className="main_bn_paging"></div>
+                <div className="main_bn_paging">
+                    <p>
+                        <strong>{activeSlide.activeSlide}</strong> / 9
+                    </p>
+                </div>
             </div>
         </div>
     )
