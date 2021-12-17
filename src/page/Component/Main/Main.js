@@ -8,7 +8,7 @@ import Head from '../Head.js';
 import Tail from "../Tail.js";
 import MainBanner from "./MainBanner.js";
 import MainBestTalk from "./MainBestTalk.js";
-import MainComu from "./MainComu.js";
+import MainComu from "./Maincomu/MainComu.js";
 import MainEvent from "./MainEvent.js";
 
 

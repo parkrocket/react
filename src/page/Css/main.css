@@ -26,15 +26,13 @@
 
 /* notice */
 .notice_wrap{padding-top: 0; margin-top: 0;}
-.notice_tab{display: flex; overflow: hidden; box-sizing: border-box;}
-.notice_tab li{width: 50%; text-align: center; background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box;}
-.notice_tab li:nth-child(1){border-left: 1px solid #ddd; border-radius: 5px 0 0 5px;}
-.notice_tab li:nth-child(2){border-right: 1px solid #ddd; border-radius: 0 5px 5px 0;}
-.notice_tab li a{display: block; width: 100%; padding: 10px 0; font-size: 1.2em;}
-.notice_tab li.on{border: 1px solid #222;}
-.notice_tab li.on a{background: #222; color: #fff;}
-.notice_tab li:nth-child(1){border-right: none;}
-.notice_tab li:nth-child(2){border-left: none;}
+.tab_menu_wrap{display: flex; overflow: hidden; box-sizing: border-box;}
+.tab_menu_wrap .tab_menu{width: 50%; padding: 10px 0; text-align: center; font-size: 1.2em; background: #fff; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; box-sizing: border-box; cursor: pointer;}
+.tab_menu_wrap .tab_menu:nth-child(1){border-left: 1px solid #ddd; border-radius: 5px 0 0 5px;}
+.tab_menu_wrap .tab_menu:nth-child(2){border-right: 1px solid #ddd; border-radius: 0 5px 5px 0;}
+.tab_menu_wrap .tab_menu.active{border: 1px solid #222; background: #222; color: #fff;}
+.tab_menu_wrap .tab_menu:nth-child(1){border-right: none;}
+.tab_menu_wrap .tab_menu:nth-child(2){border-left: none;}
 
 .notice_conts{width: 100%;}
 .notice_conts>div ul li{padding: 15px 5% 15px 0; box-sizing: border-box; border-bottom: 1px solid #eeeeee;}
