@@ -2,9 +2,10 @@
 
 /* reset */
 *{line-height: 1;}
+*:focus{outline: none; border: none; box-shadow: none;}
 html{overflow-x: hidden;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td,input,select,textarea,button {margin:0;padding:0;border: 0;}
-fieldset,img {border:0 none}
+fieldset,img {border:0 none;outline: none;}
 dl,ul,ol,menu,li {list-style:none}
 blockquote, q {quotes:none}
 blockquote:before, blockquote:after,q:before, q:after {content:'';content:none}
