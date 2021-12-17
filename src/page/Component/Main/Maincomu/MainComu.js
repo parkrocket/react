@@ -3,6 +3,7 @@ import Comu01 from './Comu01.js';
 import Comu02 from './Comu02.js';
 
 function MainComu() {
+    
     const menuList = {
         0: <Comu01 />,
         1: <Comu02 />,
